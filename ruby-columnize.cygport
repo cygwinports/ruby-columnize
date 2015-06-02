@@ -1,0 +1,16 @@
+inherit rubygem
+
+NAME="ruby-columnize"
+VERSION=0.9.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby data columnization module"
+DESCRIPTION="In showing a long lists, sometimes one would prefer to see the
+value arranged aligned in columns. Some examples include listing methods of
+an object or debugger commands."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_columnize_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_columnize_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
